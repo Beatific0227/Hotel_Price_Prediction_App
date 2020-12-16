@@ -23,8 +23,8 @@ import numpy as np
 import streamlit as st
 import pydeck as pdk
 import csv
-# from pivottablejs import pivot_ui
-# import streamlit.components.v1 as components
+from pivottablejs import pivot_ui
+import streamlit.components.v1 as components
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pickle
@@ -115,14 +115,14 @@ def makemap(locations):
     )
     st.pydeck_chart(map2)
 
-# def InteractivePivotTable(FNAME):
-#     st.write("Trying an interactive pivot table")
-#     file = pd.read_csv(FNAME, encoding = 'latin1')
-#     file.drop(['latitude','longitude','calculated_host_listings_count','id','neighbourhood_group'],inplace=True,axis=1)
-#     t = pivot_ui(file)
-#     with open(t.src) as t:
-#         components.html(t.read(), width=900, height=1000, scrolling=True)
-#     return t
+def InteractivePivotTable(FNAME):
+    st.write("Trying an interactive pivot table")
+    file = pd.read_csv(FNAME, encoding = 'latin1')
+    file.drop(['latitude','longitude','calculated_host_listings_count','id','neighbourhood_group'],inplace=True,axis=1)
+    t = pivot_ui(file)
+    with open(t.src) as t:
+        components.html(t.read(), width=900, height=1000, scrolling=True)
+    return t
 
 def RegressionAnalysis(FNAME):
     df = pd.read_csv(FNAME, encoding = 'latin1')
@@ -168,7 +168,7 @@ def RegressionAnalysis(FNAME):
 def main():
     readData(FNAME)
     makemap(locations)
-    # InteractivePivotTable(FNAME)
+    InteractivePivotTable(FNAME)
     RegressionAnalysis(FNAME)
 main()
 
