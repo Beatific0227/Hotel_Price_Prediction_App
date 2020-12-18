@@ -176,4 +176,3 @@ main()
 st.write("Reference: https://towardsdatascience.com/diabetes-prediction-application-using-streamlit-fed6120124a5\n"
          "\n"
          "https://discuss.streamlit.io/t/is-there-a-way-to-incorporate-pivottablejs-in-streamlit/4461/4")
-st.write("This Program is made by Zhengyang Wang, Bentley University, Class of 2022)
