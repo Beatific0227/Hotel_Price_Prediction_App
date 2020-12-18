@@ -2,7 +2,7 @@
 Name:       Zhengyang Wang
 CS230:      Section SN5
 Data:       Airbnb Data
-URL:        Link to your web application online (see extra credit)
+URL:        https://share.streamlit.io/beatific0227/final/main
 
 Description:
 
@@ -17,6 +17,7 @@ minimum data, and availability. The last price will be printed at the end
 so the user can compare whether they are paying extra or less
 compare to the price they found on some other renting website.
 """
+st.write("This Program is made by Zhengyang Wang, Bentley University, Class of 2022)
 
 import pandas as pd
 import numpy as np
@@ -175,3 +176,4 @@ main()
 st.write("Reference: https://towardsdatascience.com/diabetes-prediction-application-using-streamlit-fed6120124a5\n"
          "\n"
          "https://discuss.streamlit.io/t/is-there-a-way-to-incorporate-pivottablejs-in-streamlit/4461/4")
+st.write("This Program is made by Zhengyang Wang, Bentley University, Class of 2022)
