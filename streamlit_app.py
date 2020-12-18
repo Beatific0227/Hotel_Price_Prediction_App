@@ -6,7 +6,7 @@ URL:        https://share.streamlit.io/beatific0227/final/main
 
 Description:
 
-This program first create a interactive 2D model, then it present with
+This program first create a interactive 2D model, then it presents with
 a interactive 3D model. All column and dots can shows how much price, and
 the owner of the house for renting.
 Then we have the interactive pivot table where user can drag in any
@@ -17,7 +17,6 @@ minimum data, and availability. The last price will be printed at the end
 so the user can compare whether they are paying extra or less
 compare to the price they found on some other renting website.
 """
-st.write("This Program is made by Zhengyang Wang, Bentley University, Class of 2022")
 
 import pandas as pd
 import numpy as np
@@ -36,6 +35,8 @@ MAPKEY = "pk.eyJ1IjoiY2hlY2ttYXJrIiwiYSI6ImNrOTI0NzU3YTA0azYzZ21rZHRtM2tuYTcifQ.
 FNAME = 'airbnb_cambridge_listings_20201123.csv'
 location = []
 locations = []
+st.title("Housing Overview and Price Prediction")
+st.write("This Program is made by Zhengyang Wang, Bentley University, Class of 2022")
 
 def readData(FNAME):
     with open(FNAME,mode = 'r',encoding='UTF-8') as csv_file:
