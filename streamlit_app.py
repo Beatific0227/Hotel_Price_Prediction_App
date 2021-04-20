@@ -1,6 +1,5 @@
 """
 Name:       Zhengyang Wang
-CS230:      Section SN5
 Data:       Airbnb Data
 URL:        https://share.streamlit.io/beatific0227/final/main
 
